@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 20px;
+}
+.wrapper ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-file-code {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 3px;
+}
+
+.fa-folder {
+  color: rgb(0, 85, 255);
+  margin: 0px 5px;
+}/*# sourceMappingURL=style.css.map */
