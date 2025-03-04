@@ -6,6 +6,8 @@
 
 body {
   height: 100vh;
+  background-color: #252526;
+  color: white;
 }
 
 .wrapper {
@@ -37,4 +39,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.modalBtn {
+  background-color: rgb(0, 85, 255);
+  color: white;
 }/*# sourceMappingURL=style.css.map */
