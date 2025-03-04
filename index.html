@@ -11,18 +11,67 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!-- Toaster js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    
     <!-- Link to CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
     
     <title>File Structure</title>
 </head>
 <body>
+    <div class="addFolder col-5">
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary addFolderBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Add new folder
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Add file</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <!-- add input -->
+                <form class="d-flex addFolder" role="search">
+                    <div class="input-group">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                          <option selected>Choose...</option>
+                          <option value="example-site">example-site</option>
+                          <option value="activities">activities</option>
+                          <option value="indoor">indoor</option>
+                          <option value="outdoor">outdoor</option>
+                          <option value="css">css</option>
+                          <option value="images">images</option>
+                          <option value="music">music</option>
+                          <option value="theater">theater</option>
+
+                        </select>
+                      </div>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Add</button>
+                  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+
+    
+    </div>
     <div class="wrapper col-3">
         <ul>
             <li>
                 <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>example-site</span></div>
                 <ul>
-                    <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
+                    <!-- <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li> -->
 
                     <!-- Activities Folder -->
                     <li>
@@ -32,17 +81,17 @@
                             <li>
                                 <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>indoor</span></div>
                                 <ul>
-                                    <li><i class="fa-solid fa-file-code"></i> <span>camping.html</span></li>
-                                    <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
+                                    <!-- <li><i class="fa-solid fa-file-code"></i> <span>camping.html</span></li>
+                                    <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li> -->
                                 </ul>
                             </li>
                             <!-- Outdoor Folder -->
                             <li>
                                 <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>outdoor</span></div>
                                 <ul>
-                                    <li><i class="fa-solid fa-file-code"></i> <span>basketball.html</span></li>
+                                    <!-- <li><i class="fa-solid fa-file-code"></i> <span>basketball.html</span></li>
                                     <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
-                                    <li><i class="fa-solid fa-file-code"></i> <span>swim.html</span></li>
+                                    <li><i class="fa-solid fa-file-code"></i> <span>swim.html</span></li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -52,7 +101,7 @@
                     <li>
                         <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>css</span></div>
                         <ul>
-                            <li><i class="fa-solid fa-file-code"></i> <span>style.css</span></li>
+                            <!-- <li><i class="fa-solid fa-file-code"></i> <span>style.css</span></li> -->
                         </ul>
                     </li>
 
@@ -60,7 +109,7 @@
                     <li>
                         <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>images</span></div>
                         <ul>
-                            <li><i class="fa-solid fa-file-image"></i> <span>logo.png</span></li>
+                            <!-- <li><i class="fa-solid fa-file-image"></i> <span>logo.png</span></li> -->
                         </ul>
                     </li>
 
@@ -68,9 +117,9 @@
                     <li>
                         <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>music</span></div>
                         <ul>
-                            <li><i class="fa-solid fa-file-code"></i> <span>hiphop.html</span></li>
+                            <!-- <li><i class="fa-solid fa-file-code"></i> <span>hiphop.html</span></li>
                             <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
-                            <li><i class="fa-solid fa-file-code"></i> <span>rnb.html</span></li>
+                            <li><i class="fa-solid fa-file-code"></i> <span>rnb.html</span></li> -->
                         </ul>
                     </li>
 
@@ -78,9 +127,9 @@
                     <li>
                         <div><i class="fa-solid fa-caret-down"></i> <i class="fa-solid fa-folder"></i> <span>theater</span></div>
                         <ul>
-                            <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
+                            <!-- <li><i class="fa-solid fa-file-code"></i> <span>index.html</span></li>
                             <li><i class="fa-solid fa-file-code"></i> <span>listings.html</span></li>
-                            <li><i class="fa-solid fa-file-code"></i> <span>reviews.html</span></li>
+                            <li><i class="fa-solid fa-file-code"></i> <span>reviews.html</span></li> -->
                         </ul>
                     </li>
 
@@ -88,8 +137,8 @@
             </li>
         </ul>
     </div>
-
     <!-- script -->
      <script src="assets/scripts/script.js"></script>
+     
 </body>
 </html>

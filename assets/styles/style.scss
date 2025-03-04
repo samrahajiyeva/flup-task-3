@@ -39,3 +39,13 @@ body{
     margin: 0px 5px;
 }
 
+.addFolderBtn{
+    margin: 10px 5px;
+    width: 200px;
+}
+
+.addFolder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
